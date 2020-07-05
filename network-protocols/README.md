@@ -15,7 +15,7 @@ node server.js
 
 The other terminal: (Client)
 
-**GET**
+### GET
 
 ```bash
 curl localhost:3000/hello
@@ -25,7 +25,7 @@ _Response:_
 
 ![GET](images/GET.png)
 
-**POST**
+### POST
 
 ```bash
 curl --header 'content-type: application/json' localhost:3000/hello --data '{"foo": "bar"}'
@@ -35,7 +35,10 @@ _Response:_
 
 ![POST](images/POST.png)
 
-**Note:** The content-length (the length of the body) is specified in this response.
+**Note:**
+
+- The `content-length` (the length of the body) is specified in this response.
+- The `accept` key in `headers` is always added in the reponse.
 
 ## HTTP - Request-Response paradigm
 
